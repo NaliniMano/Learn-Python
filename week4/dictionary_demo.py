@@ -24,3 +24,19 @@ print(get_values)
 #Check if Key Exists
 if "age" in dist2:
     print("Age present in Dict")
+    
+#  remove element from dict using key
+dist2.pop("age")
+print(dist2)
+dist2["age"]=40
+print("Added new item",dist2)
+dist2.popitem()
+print("Removed Last added item using pop item method",dist2)
+del dist2["name"]
+print("Deleted item using del",dist2)
+dist3=dist2.copy()
+dist2.clear()
+print("Clear Dict using clear",dist2)
+print(dist3)
+
+    
