@@ -15,4 +15,5 @@ for x in thisdist.keys():
     print("Keys of Dict ,",x)
 
 for x,y in thisdist.items():
-    print("keys=",x,"Values=",y)
+    print("keys=",x,"Values=",y) # print key & values
+
