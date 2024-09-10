@@ -4,4 +4,10 @@ def test_fn():
 def test_hap():
     print("This new test")
 
+def test_2():
+    x=10
+    y=20
+    assert x==y
+
+
 
