@@ -23,4 +23,17 @@ def test_write_file1(tmpdir):
     file.write("Happy coding with python")
     assert file.read() == "Happy coding with python"
 
+#capsys Captures the output to stdout and stderr during a test.
+# This is useful for validating print statements or log output.
+def test_output(capsys):
+    print("Hello World")
+    captured = capsys.readouterr()
+    assert captured.out == "Hello World\n"
+
+
+
+
+
+
+
 
