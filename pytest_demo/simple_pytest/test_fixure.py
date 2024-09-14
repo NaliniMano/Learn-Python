@@ -1,5 +1,11 @@
 import pytest
 
+
+@pytest.fixture
+def my_fixture(request):
+    print(f"Running {request.node.name}")
+def test_request_fix(my_fixture):
+    print("Request Fixure")
 #Fixtures allow setting up preconditions for tests
 @pytest.fixture
 def setup():
@@ -29,6 +35,12 @@ def test_output(capsys):
     print("Hello World")
     captured = capsys.readouterr()
     assert captured.out == "Hello World\n"
+
+
+
+
+
+
 
 
 
